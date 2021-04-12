@@ -4,12 +4,11 @@
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
 var number= [];
-var prova = Math.floor(Math.random() * 5) + 1;
-console.log(prova);
+console.log(number);
 
 for (i = 0; i < 5; i++) {
-    prova += number[i]; 
-    console.log(prova);
+    var prova = Math.floor(Math.random() * 20) + 1;
+    if(number.indexOf(prova) === -1) number.push(prova);
         
 }
 
