@@ -8,7 +8,17 @@ console.log(number);
 
 for (i = 0; i < 5; i++) {
     var prova = Math.floor(Math.random() * 20) + 1;
-    if(number.indexOf(prova) === -1) number.push(prova);
-        
+    if(number.indexOf(prova) === -1) number.push(prova);       
 }
+
+
+var secondi = 30;
+
+var provaSecondi = setInterval(function() {
+    if( secondi === 0){
+        clearInterval(provaSecondi);
+    }else{
+        secondi++;
+    }
+}, 1000);
 
